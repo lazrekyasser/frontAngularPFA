@@ -15,6 +15,7 @@ import { ConfirmationComponent } from './confirmation/confirmation.component';
 import { DepressionComponent } from './depression/depression.component';
 import { EditProfileComponent } from './edit-profile/edit-profile.component';
 import { ErrorInRoutingComponent } from './error-in-routing/error-in-routing.component';
+import { GestionEnquetesComponent } from './gestion-enquetes/gestion-enquetes.component';
 import { HomeComponent } from './home/home.component';
 import { LoginGoogleComponent } from './login-google/login-google.component';
 import { LoginComponent } from './login/login.component';
@@ -41,6 +42,11 @@ pathMatch : 'full'
 {
   path : 'client/modifier-client/:id',
   component : EditProfileComponent
+},
+{
+  path : 'specialiste/gestion/Enquetes',
+  component : GestionEnquetesComponent,
+  canActivate : [AuthSpecialisteGuardGuard]
 },
 {
   path : 'profile',

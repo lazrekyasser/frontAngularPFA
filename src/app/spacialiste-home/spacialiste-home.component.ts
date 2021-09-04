@@ -5,7 +5,6 @@ import {Pipe, PipeTransform} from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { GestionSpecialisteServiceService } from '../gestion-specialiste-service.service';
-import { AdminSpecialisteSideComponent } from '../admin-specialiste-side/admin-specialiste-side.component';
 declare var $ :any;
 
 
@@ -16,7 +15,6 @@ declare var $ :any;
 })
 export class SpacialisteHomeComponent implements OnInit {
 public titleCase = "abdo"
- private id : any = this.route.snapshot.paramMap.get('id');
   public message: String = '';
   public confirm = false;
   public TELE : String='';
@@ -158,7 +156,6 @@ public titleCase = "abdo"
             // validator: this.MustMatch('password', 'confirmPassword')
           });
        }, 3000);
-
 
         this.registerForm = this.formBuilder.group({
           nom: [this.user.nom, Validators.required],

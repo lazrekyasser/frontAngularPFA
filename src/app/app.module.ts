@@ -37,6 +37,7 @@ import { ModifierSpecialisteComponent } from './modifier-specialiste/modifier-sp
 import { AnexityComponent } from './anexity/anexity.component';
 import { DepressionComponent } from './depression/depression.component';
 import { StressComponent } from './stress/stress.component';
+import { GestionEnquetesComponent } from './gestion-enquetes/gestion-enquetes.component';
 
 
 
@@ -70,6 +71,7 @@ import { StressComponent } from './stress/stress.component';
     AnexityComponent,
     DepressionComponent,
     StressComponent,
+    GestionEnquetesComponent,
    
   ],
 
