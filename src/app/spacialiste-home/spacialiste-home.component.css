@@ -251,3 +251,34 @@ label:focus,
     -webkit-appearance:none;
     box-shadow: none !important;
 }
+.submit{
+    position: relative;
+    /* left: 50%; */
+    width: 50%;
+    color: white;
+    /* transform: translateX(-25%); */
+    font-weight: bold;
+    background-color: #37517e !important;
+    border: none;
+}
+#myImage1:hover{
+    cursor: pointer;
+    }
+.submit:hover{
+    color: white;
+    position: relative;
+    /* left: 50%; */
+    width: 50%;
+    /* transform: translateX(-25%); */
+    font-weight: bold;
+    background-color: #253b63 !important;
+    border: none;
+}
+
+.profile{
+
+    object-fit: cover !important;
+    border-radius: 50%;
+    /* border: 2px solid #d4dce7; */
+    
+}

@@ -27,8 +27,6 @@ public titleCase = "abdo"
   selectedFile = null;
   specialiste = 0; 
   public static specialistes : Array<any> = [];
-  public static clt : any;
-  clt= this.specialistesValue();
   registerForm: any;
 
   constructor(private route : ActivatedRoute,private _auth : AuthService,private _gestionSpecialiste : GestionSpecialisteServiceService, private _router: Router, private formBuilder: FormBuilder) { }

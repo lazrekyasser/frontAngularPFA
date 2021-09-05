@@ -107,25 +107,41 @@ background-attachment: scroll !important;
 background-size: cover !important;
 }
 .submit{
-    
     position: relative;
-    left: 50%;
+    /* left: 50%; */
     width: 50%;
-    transform: translateX(-25%);
+    color: white;
+    /* transform: translateX(-25%); */
     font-weight: bold;
     background-color: #37517e !important;
     border: none;
-
 }
 .submit:hover{
+    color: white;
     position: relative;
-    left: 50%;
+    /* left: 50%; */
     width: 50%;
-    transform: translateX(-25%);
+    /* transform: translateX(-25%); */
     font-weight: bold;
     background-color: #253b63 !important;
     border: none;
 }
+.card-profile{
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+    min-height: auto !important;
+}
+#myImage1:hover{
+    cursor: pointer;
+    }
+
+.profile{
+
+    object-fit: cover !important;
+    border-radius: 50%;
+    /* border: 2px solid #d4dce7; */
+    
+}
+
 .form-check-input{
     transform:scale(0.9) !important;
     /* border: 1px solid black !important; */
