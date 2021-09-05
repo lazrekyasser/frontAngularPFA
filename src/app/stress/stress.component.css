@@ -114,6 +114,17 @@ background-size: cover !important;
     transform: translateX(-25%);
     font-weight: bold;
     background-color: #37517e !important;
+    border: none;
+
+}
+.submit:hover{
+    position: relative;
+    left: 50%;
+    width: 50%;
+    transform: translateX(-25%);
+    font-weight: bold;
+    background-color: #253b63 !important;
+    border: none;
 }
 .form-check-input{
     transform:scale(0.9) !important;
@@ -156,7 +167,23 @@ background-size: cover !important;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
-
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+}
 .card {
     min-height: 400px;
 }

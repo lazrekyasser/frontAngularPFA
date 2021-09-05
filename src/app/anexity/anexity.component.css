@@ -114,7 +114,21 @@ background-size: cover !important;
     transform: translateX(-25%);
     font-weight: bold;
     background-color: #37517e !important;
+    border: none;
+
 }
+.submit:hover{
+    
+    position: relative;
+    left: 50%;
+    width: 50%;
+    transform: translateX(-25%);
+    font-weight: bold;
+    background-color: #253b63 !important;
+    border: none;
+    
+}
+
 .form-check-input{
     transform:scale(0.9) !important;
     /* border: 1px solid black !important; */
@@ -124,11 +138,13 @@ background-size: cover !important;
     font-size: 0.9em;
     color: #6c757d !important;
 }
+
 .remarque{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.9em;
     color: #209dd8 !important;
 }
+
 .all{
     /* background-color: rgb(240, 240, 240) !important; */
 }
@@ -155,6 +171,23 @@ background-size: cover !important;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+}
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
 }
 
 .card {
