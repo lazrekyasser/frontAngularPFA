@@ -95,7 +95,7 @@ export class HomeComponent implements OnInit {
           setTimeout(()=>{
             $('#myModal').modal('hide');
             window.location.href = "http://localhost:4200/home";
-          },1000)
+          },5000)
         },
         err=> console.log(err)
       )

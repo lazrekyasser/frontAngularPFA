@@ -3,27 +3,28 @@
 
 <app-nav-bar-test></app-nav-bar-test>
 
- <!-- Modal-for registre success -->
- <div class="modal fade" id="elegantModalFormSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
- aria-hidden="true">
- <div class="modal-dialog" role="document">
-     <!--Content-->
-     <div class="modal-content form-elegant">
-         <!--Header-->
-         <div class="modal-header text-center">
-             <h3 class="modal-title w-100 dark-grey-text font-weight-bold my-3" id="myModalLabel"><strong class="text-success">Votre Inscription est bien envoyer</strong></h3>
-             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                 <span aria-hidden="true">&times;</span>
-             </button>
-         </div>
-         <!--Body-->
-         <div class="modal-body mx-4">
-             {{message}}
-         </div>
-         <!--Footer-->
-     </div>
-     <!--/.Content-->
- </div>
+<!-- Modal-for registre success -->
+<div class="modal fade" id="elegantModalFormSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <!--Content-->
+    <div class="modal-content form-elegant">
+      <!--Header-->
+      <div class="modal-header text-center">
+        <h3 class="modal-title w-100 dark-grey-text font-weight-bold my-3" id="myModalLabel"><strong
+            class="text-success">Votre Inscription est bien envoyer</strong></h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <!--Body-->
+      <div class="modal-body mx-4">
+        {{message}}
+      </div>
+      <!--Footer-->
+    </div>
+    <!--/.Content-->
+  </div>
 </div>
 <!-- Modal -->
 
@@ -181,15 +182,15 @@
                 </div>
               </div>
               <div class="form-group">
-                  <select formControlName="sexe" class="form-control validate"
-                    [ngClass]="{ 'is-invalid': submitted && f.sexe.errors }" class="custom-select validate">
-                    <option value="" selected disabled>Votre Sexe *</option>
-                    <option value="M">M</option>
-                    <option value="F">F</option>
-                  </select>
-                  <div *ngIf="submitted && f.sexe.errors" class="invalid-feedback">
-                    <div *ngIf="f.sexe.errors.required">Sexe est obligatoire</div>
-                  </div>
+                <select formControlName="sexe" class="form-control validate"
+                  [ngClass]="{ 'is-invalid': submitted && f.sexe.errors }" class="custom-select validate">
+                  <option value="" selected disabled>Votre Sexe *</option>
+                  <option value="M">M</option>
+                  <option value="F">F</option>
+                </select>
+                <div *ngIf="submitted && f.sexe.errors" class="invalid-feedback">
+                  <div *ngIf="f.sexe.errors.required">Sexe est obligatoire</div>
+                </div>
               </div>
               <div class="form-group">
                 <input placeholder="Date de naissance *" type="date" formControlName="date_naissance"
@@ -241,11 +242,14 @@
                 <select formControlName="niveauScolaire" class="form-control validate"
                   [ngClass]="{ 'is-invalid': submitted && f.niveauScolaire.errors }" class="custom-select validate">
                   <option value="" selected disabled>Votre niveau scolaire *</option>
-                  <option value="1 ere annee preparatoire">1 ere annee preparatoire</option>
-                  <option value="2 eme annee preparatoire">2 eme annee preparatoire</option>
-                  <option value="1 ere annee cycle d'ingenieur">1 ere annee cycle d'ingenieur</option>
-                  <option value="2 eme annee cycle d'ingenieur">2 eme annee cycle d'ingenieur</option>
-                  <option value="3 eme annee cycle d'ingenieur">3 eme annee cycle d'ingenieur</option>
+                  <option value="1 ère année preparatoire">1 ère année preparatoire</option>
+                  <option value="2 ème année preparatoire">2 ème année preparatoire</option>
+                  <option value="1 ère année cycle d'ingenieur">1 ère année cycle d'ingenieur
+                  </option>
+                  <option value="2 ème année cycle d'ingénieur">2 ème année cycle d'ingénieur
+                  </option>
+                  <option value="3 ème année cycle d'ingénieur">3 ème année cycle d'ingénieur
+                  </option>
                 </select>
                 <div *ngIf="submitted && f?.profession.errors" class="invalid-feedback">
                   <div *ngIf="f?.profession.errors.required">profession est obligatoire</div>
@@ -281,148 +285,162 @@
 </div>
 <!-- Modal -->
 
- <!-- modal success updating  -->
- <div id="myModal" class="modal fade">
+<!-- modal success updating  -->
+<div id="myModal" class="modal fade">
   <div class="modal-dialog modal-confirm">
-      <div class="modal-content">
-          <div class="modal-header justify-content-center">
-              <div class="icon-box">
-                  <i class="far fa-check-circle"></i>
-              </div>
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          </div>
-          <div class="modal-body text-center">
-              <h4>Parfait!</h4>	
-              <p>les Modifications sont bien enregistrés.</p>
-          </div>
+    <div class="modal-content">
+      <div class="modal-header justify-content-center">
+        <div class="icon-box">
+          <i class="far fa-check-circle"></i>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
       </div>
+      <div class="modal-body text-center">
+        <h4>Parfait!</h4>
+        <p>les Modifications sont bien enregistrés.</p>
+      </div>
+    </div>
   </div>
-</div>   
+</div>
 
- <!-- Modal -->
- <div class="modal fade " id="elegantModalFormRegistre" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
- aria-hidden="true">
- <div class="modal-dialog modal-xl" role="document">
-     <!--Content-->
-     <div class="modal-content form-elegant">
-         <!--Header-->
-         <div class="modal-header text-center">
-             <h3 class="modal-title w-100 dark-grey-text font-weight-bold my-3 ms-5" id="myModalLabel">
-                 <strong>Ajouter Un Client</strong></h3>
-             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                 <span aria-hidden="true">&times;</span>
-             </button>
-         </div>
-         <!--Body-->
-         <div class="modal-body mx-4">
-             <!--Body-->
-             <form [formGroup]="addForm" (ngSubmit)="registreSubmit()">
-                 <div class="row register-form">
-                     <div class="col-md-6">
-                         <div class="form-group">
-                             <input type="text" formControlName="nom" class="form-control validate" placeholder="Votre Nom *" [ngClass]="{ 'is-invalid': submitted && f2.nom.errors }" />
-                             <div *ngIf="submitted && f2.nom.errors" class="invalid-feedback">
-                                 <div *ngIf="f2.nom.errors.required">Nom est obligatoire</div>
-                             </div>
-                         </div>
-                         <div class="form-group">
-                             <input type="text" formControlName="prenom" placeholder="Votre Prenom *" class="form-control validate" [ngClass]="{ 'is-invalid': submitted && f2.prenom.errors }" />
-                             <div *ngIf="submitted && f2.prenom.errors" class="invalid-feedback">
-                                 <div *ngIf="f2.prenom.errors.required">Prenom est obligatoire</div>
-                             </div>
-                         </div>
-                         <div class="form-group">
-                             <div class="maxl">
-                                 <select  formControlName="sexe" class="form-control validate" [ngClass]="{ 'is-invalid': submitted && f2.sexe.errors }" class="custom-select validate">
-                                     <option value="" selected disabled>Votre Sexe *</option>
-                                     <option value="M">M</option>
-                                     <option value="F">F</option>
-                                 </select>
-                                 <div *ngIf="submitted && f2.sexe.errors" class="invalid-feedback">
-                                     <div *ngIf="f2.sexe.errors.required">Sexe est obligatoire</div>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="form-group">
-                             <input placeholder="Date de naissance *" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" formControlName="date_naissance" class="form-control validate" [ngClass]="{ 'is-invalid': submitted && f2.date_naissance.errors }"  />
-                             <div *ngIf="submitted && f2.date_naissance.errors" class="invalid-feedback">
-                                 <div *ngIf="f2.date_naissance.errors.required">Date de naissance est obligatoire</div>
-                             </div>
-                         </div>
-                         <div class="form-group">
-                             <input type="text" formControlName="email" placeholder="Votre Email *" class="form-control validate" [ngClass]="{ 'is-invalid': submitted && f2.email.errors }" />
-                             <div *ngIf="submitted && f2.email.errors" class="invalid-feedback">
-                                 <div *ngIf="f2.email.errors.required">Email est obligatoire</div>
-                                 <div *ngIf="f2.email.errors.email">Email must be a valid email address</div>
-                             </div>
-                         </div>
-                     </div>
-                     <div class="col-md-6">
-                         <div class="form-group">
-                             <input type="text" [(ngModel)]="TELE" (focus)="changeTele()"   placeholder="Votre Numero De Tele *" formControlName="tele" class="form-control validate" [ngClass]="{ 'is-invalid': submitted && f2.tele.errors }" />
-                             <div *ngIf="submitted && f2.tele.errors" class="invalid-feedback">
-                                 <div *ngIf="f2.tele.errors.required">Numero de tele est obligatoire</div>
-                                 <div *ngIf="f2.tele.errors.pattern">Invalid phone number.</div>
-                             </div>
-                         </div>
+<!-- Modal -->
+<div class="modal fade " id="elegantModalFormRegistre" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <!--Content-->
+    <div class="modal-content form-elegant">
+      <!--Header-->
+      <div class="modal-header text-center">
+        <h3 class="modal-title w-100 dark-grey-text font-weight-bold my-3 ms-5" id="myModalLabel">
+          <strong>Ajouter Un Client</strong>
+        </h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <!--Body-->
+      <div class="modal-body mx-4">
+        <!--Body-->
+        <form [formGroup]="addForm" (ngSubmit)="registreSubmit()">
+          <div class="row register-form">
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="text" formControlName="nom" class="form-control validate" placeholder="Votre Nom *"
+                  [ngClass]="{ 'is-invalid': submitted && f2.nom.errors }" />
+                <div *ngIf="submitted && f2.nom.errors" class="invalid-feedback">
+                  <div *ngIf="f2.nom.errors.required">Nom est obligatoire</div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" formControlName="prenom" placeholder="Votre Prenom *" class="form-control validate"
+                  [ngClass]="{ 'is-invalid': submitted && f2.prenom.errors }" />
+                <div *ngIf="submitted && f2.prenom.errors" class="invalid-feedback">
+                  <div *ngIf="f2.prenom.errors.required">Prenom est obligatoire</div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="maxl">
+                  <select formControlName="sexe" class="form-control validate"
+                    [ngClass]="{ 'is-invalid': submitted && f2.sexe.errors }" class="custom-select validate">
+                    <option value="" selected disabled>Votre Sexe *</option>
+                    <option value="M">M</option>
+                    <option value="F">F</option>
+                  </select>
+                  <div *ngIf="submitted && f2.sexe.errors" class="invalid-feedback">
+                    <div *ngIf="f2.sexe.errors.required">Sexe est obligatoire</div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input placeholder="Date de naissance *" type="text" onfocus="(this.type='date')"
+                  onblur="(this.type='text')" formControlName="date_naissance" class="form-control validate"
+                  [ngClass]="{ 'is-invalid': submitted && f2.date_naissance.errors }" />
+                <div *ngIf="submitted && f2.date_naissance.errors" class="invalid-feedback">
+                  <div *ngIf="f2.date_naissance.errors.required">Date de naissance est obligatoire</div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" formControlName="email" placeholder="Votre Email *" class="form-control validate"
+                  [ngClass]="{ 'is-invalid': submitted && f2.email.errors }" />
+                <div *ngIf="submitted && f2.email.errors" class="invalid-feedback">
+                  <div *ngIf="f2.email.errors.required">Email est obligatoire</div>
+                  <div *ngIf="f2.email.errors.email">Email must be a valid email address</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="text" [(ngModel)]="TELE" (focus)="changeTele()" placeholder="Votre Numero De Tele *"
+                  formControlName="tele" class="form-control validate"
+                  [ngClass]="{ 'is-invalid': submitted && f2.tele.errors }" />
+                <div *ngIf="submitted && f2.tele.errors" class="invalid-feedback">
+                  <div *ngIf="f2.tele.errors.required">Numero de tele est obligatoire</div>
+                  <div *ngIf="f2.tele.errors.pattern">Invalid phone number.</div>
+                </div>
+              </div>
 
-                         <div class="form-group">
-                          <select formControlName="profession" class="form-control validate"
-                          [ngClass]="{ 'is-invalid': submitted && f.profession.errors }" class="custom-select validate">
-                          <option value="" selected disabled>Votre profession *</option>
-                          <option value="Etudiant">Etudiant</option>
-                          <option value="Professeur">Professeur</option>
-                          <option value="Doctorant">Doctorant</option>
-                          <option value="autre">autre</option>
-                        </select>
-                             <div *ngIf="submitted && f2.profession.errors" class="invalid-feedback">
-                                 <div *ngIf="f2.profession.errors.required">profession est obligatoire</div>
-                             </div>
-                         </div>
-                         <div class="form-group">
-                          <select formControlName="niveauScolaire" class="form-control validate"
-                          [ngClass]="{ 'is-invalid': submitted && f.niveauScolaire.errors }"
-                          class="custom-select validate">
-                          <option value="" selected disabled>Votre niveau scolaire *</option>
-                          <option value="1 ere annee preparatoire">1 ere annee preparatoire</option>
-                          <option value="2 eme annee preparatoire">2 eme annee preparatoire</option>
-                          <option value="1 ere annee cycle d'ingenieur">1 ere annee cycle d'ingenieur</option>
-                          <option value="2 eme annee cycle d'ingenieur">2 eme annee cycle d'ingenieur</option>
-                          <option value="3 eme annee cycle d'ingenieur">3 eme annee cycle d'ingenieur</option>
-                      </select>
-                             <div *ngIf="submitted && f2.profession.errors" class="invalid-feedback">
-                                 <div *ngIf="f2.profession.errors.required">profession est obligatoire</div>
-                             </div>
-                         </div>
-                         <div class="form-group">
-                             <input type="password" placeholder="Votre Mot De Passe *" formControlName="password" class="form-control validate" [ngClass]="{ 'is-invalid': submitted && f2.password.errors }" />
-                             <div *ngIf="submitted && f2.password.errors" class="invalid-feedback">
-                                 <div *ngIf="f2.password.errors.required">Password est obligatoire</div>
-                                 <div *ngIf="f2.password.errors.minlength">Password must be at least 6 characters</div>
-                             </div>
-                         </div>
-                         <div class="form-group">
-                             <input type="password" placeholder="Confirmer Votre Mot De Passe *" formControlName="passwordConfirm" class="form-control validate" [ngClass]="{ 'is-invalid': submitted && f2.passwordConfirm.errors }" />
-                             <div *ngIf="submitted && f2.passwordConfirm.errors" class="invalid-feedback">
-                                 <div *ngIf="f2.passwordConfirm.errors.required">Password est obligatoire</div>
-                                 <div *ngIf="f2.passwordConfirm.errors.minlength">Password must be at least 6 characters</div>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-         
-             </form>
-             <div class="text-center mb-3 mt-3 me-auto">
-                 <button type="button" (click)="registreSubmit()" class="btn blue-gradient btn-block btn-rounded z-depth-1a inscrire">Ajouter</button>
-             </div>
-         </div>
-         <!--Footer-->
-         <!-- <div class="modal-footer mx-5 pt-3 mb-1">
+              <div class="form-group">
+                <select formControlName="profession" class="form-control validate"
+                  [ngClass]="{ 'is-invalid': submitted && f.profession.errors }" class="custom-select validate">
+                  <option value="" selected disabled>Votre profession *</option>
+                  <option value="Etudiant">Etudiant</option>
+                  <option value="Professeur">Professeur</option>
+                  <option value="Doctorant">Doctorant</option>
+                  <option value="autre">autre</option>
+                </select>
+                <div *ngIf="submitted && f2.profession.errors" class="invalid-feedback">
+                  <div *ngIf="f2.profession.errors.required">profession est obligatoire</div>
+                </div>
+              </div>
+              <div class="form-group">
+                <select formControlName="niveauScolaire" class="form-control validate"
+                  [ngClass]="{ 'is-invalid': submitted && f.niveauScolaire.errors }" class="custom-select validate">
+                  <option value="" selected disabled>Votre niveau scolaire *</option>
+                  <option value="1 ère année preparatoire">1 ère année preparatoire</option>
+                  <option value="2 ème année preparatoire">2 ème année preparatoire</option>
+                  <option value="1 ère année cycle d'ingenieur">1 ère année cycle d'ingenieur
+                  </option>
+                  <option value="2 ème année cycle d'ingénieur">2 ème année cycle d'ingénieur
+                  </option>
+                  <option value="3 ème année cycle d'ingénieur">3 ème année cycle d'ingénieur
+                  </option>
+                </select>
+                <div *ngIf="submitted && f2.profession.errors" class="invalid-feedback">
+                  <div *ngIf="f2.profession.errors.required">profession est obligatoire</div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="password" placeholder="Votre Mot De Passe *" formControlName="password"
+                  class="form-control validate" [ngClass]="{ 'is-invalid': submitted && f2.password.errors }" />
+                <div *ngIf="submitted && f2.password.errors" class="invalid-feedback">
+                  <div *ngIf="f2.password.errors.required">Password est obligatoire</div>
+                  <div *ngIf="f2.password.errors.minlength">Password must be at least 6 characters</div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="password" placeholder="Confirmer Votre Mot De Passe *" formControlName="passwordConfirm"
+                  class="form-control validate" [ngClass]="{ 'is-invalid': submitted && f2.passwordConfirm.errors }" />
+                <div *ngIf="submitted && f2.passwordConfirm.errors" class="invalid-feedback">
+                  <div *ngIf="f2.passwordConfirm.errors.required">Password est obligatoire</div>
+                  <div *ngIf="f2.passwordConfirm.errors.minlength">Password must be at least 6 characters</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </form>
+        <div class="text-center mb-3 mt-3 me-auto">
+          <button type="button" (click)="registreSubmit()"
+            class="btn blue-gradient btn-block btn-rounded z-depth-1a inscrire">Ajouter</button>
+        </div>
+      </div>
+      <!--Footer-->
+      <!-- <div class="modal-footer mx-5 pt-3 mb-1">
              <p class="font-small grey-text d-flex justify-content-end">vous n'etes pas un membre? <a href="#"
                      class="blue-text ml-1">
                      S'inscrire</a></p>
          </div> -->
-     </div>
-     <!--/.Content-->
- </div>
+    </div>
+    <!--/.Content-->
+  </div>
 </div>

@@ -288,15 +288,18 @@
                                 </div>
                                 <div class="form-group">
                                     <select formControlName="niveauScolaire" class="form-control validate"
-                                        [ngClass]="{ 'is-invalid': submitted && f.niveauScolaire.errors }"
-                                        class="custom-select validate">
-                                        <option value="" selected disabled>Votre niveau scolaire *</option>
-                                        <option value="1 ere annee preparatoire">1 ere annee preparatoire</option>
-                                        <option value="2 eme annee preparatoire">2 eme annee preparatoire</option>
-                                        <option value="1 ere annee cycle d'ingenieur">1 ere annee cycle d'ingenieur</option>
-                                        <option value="2 eme annee cycle d'ingenieur">2 eme annee cycle d'ingenieur</option>
-                                        <option value="3 eme annee cycle d'ingenieur">3 eme annee cycle d'ingenieur</option>
-                                    </select>
+                                    [ngClass]="{ 'is-invalid': submitted && f.niveauScolaire.errors }"
+                                    class="custom-select validate">
+                                    <option value="" selected disabled>Votre niveau scolaire *</option>
+                                    <option value="1 ère année preparatoire">1 ère année preparatoire</option>
+                                    <option value="2 ème année preparatoire">2 ème année preparatoire</option>
+                                    <option value="1 ère année cycle d'ingenieur">1 ère année cycle d'ingenieur
+                                    </option>
+                                    <option value="2 ème année cycle d'ingénieur">2 ème année cycle d'ingénieur
+                                    </option>
+                                    <option value="3 ème année cycle d'ingénieur">3 ème année cycle d'ingénieur
+                                    </option>
+                                </select>
                                     <div *ngIf="submitted && f?.profession.errors" class="invalid-feedback">
                                         <div *ngIf="f?.profession.errors.required">profession est obligatoire</div>
                                     </div>

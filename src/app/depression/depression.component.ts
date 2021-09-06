@@ -18,19 +18,7 @@ declare var $ :any;
 export class DepressionComponent implements OnInit {
 
   public profile = "../assets/img/contact.png";
-  public user = {
-    date_naissance: '',
-    id : 0,
-  email: '',
-  nom: '',
-  numero_tele: '',
-  prenom: '',
-  profession: '',
-  adresse: '',
-  role: '',
-  picture:'',
-  niveauScolaire : ""
-  };
+  public user = {date_naissance: '',id : 0,email: '',nom: '',numero_tele: '',prenom: '',profession: '',adresse: '',role: '',picture:'',niveauScolaire : ""};
   uploading : boolean = true;
   refresh : boolean = false;
   selectedFile = null;
