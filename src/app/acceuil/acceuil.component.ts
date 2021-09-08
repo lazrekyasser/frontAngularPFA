@@ -87,7 +87,7 @@ export class AcceuilComponent implements OnInit {
         $('#elegantModalFormSuccess').modal('show');
         setTimeout(() => {
           $('#elegantModalFormSuccess').modal('hide');
-            window.location.href = "http://localhost:4200/acceuil";
+            window.location.href = "/acceuil";
         }, 6000);
       },
       err=> {

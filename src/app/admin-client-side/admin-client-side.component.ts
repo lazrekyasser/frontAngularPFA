@@ -76,7 +76,7 @@ export class AdminClientSideComponent implements OnInit {
         $('#elegantModalFormUpdate').modal('hide');
         setTimeout(()=>{
           $('#myModal').modal('hide');
-          window.location.href = "http://localhost:4200/admin/client-side";
+          window.location.href = "/admin/client-side";
         },1000)
       },
       err=> console.log(err) 
@@ -121,7 +121,7 @@ export class AdminClientSideComponent implements OnInit {
         $('#elegantModalFormSuccess').modal('show');
         setTimeout(() => {
           $('#elegantModalFormSuccess').modal('hide');
-          window.location.href = "http://localhost:4200/admin/client-side";
+          window.location.href = "/admin/client-side";
         }, 6000);
       },
       err=> {

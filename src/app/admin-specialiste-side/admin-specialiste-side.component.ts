@@ -120,7 +120,7 @@ export class AdminSpecialisteSideComponent implements OnInit {
         $('#elegantModalFormUpdate').modal('hide');
         setTimeout(()=>{
           $('#myModal').modal('hide');
-          window.location.href = "http://localhost:4200/admin/specialiste-side";
+          window.location.href = "/admin/specialiste-side";
         },5000)
       },
       err=> console.log(err)
@@ -173,7 +173,7 @@ export class AdminSpecialisteSideComponent implements OnInit {
         $('#elegantModalFormRegistre').modal('show');
         setTimeout(()=>{
           $('#myModal').modal('hide');
-          window.location.href = "http://localhost:4200/admin/specialiste-side";
+          window.location.href = "/admin/specialiste-side";
         },5000)
       },
       err => console.log(err)

@@ -58,7 +58,7 @@ public changeTele(){
       }
     )
     $('#exampleModalCenter').on('hidden.bs.modal',  () => {
-      window.location.href = "http://localhost:4200/acceuil";
+      window.location.href = "/acceuil";
      });
   }
   

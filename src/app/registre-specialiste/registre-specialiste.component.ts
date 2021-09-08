@@ -102,7 +102,7 @@ export class RegistreSpecialisteComponent implements OnInit {
       err => console.log(err)
     )
     $('#exampleModalCenter').on('hidden.bs.modal',  () => {
-      window.location.href = "http://localhost:4200/acceuil";
+      window.location.href = "/acceuil";
      });
   }
 

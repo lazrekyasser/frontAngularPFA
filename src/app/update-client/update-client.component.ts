@@ -51,7 +51,7 @@ export class UpdateClientComponent implements OnInit {
       err=> console.log(err) 
     )
     $('#exampleModalCenter').on('hidden.bs.modal',  () => {
-      window.location.href = "http://localhost:4200/admin/client-side";
+      window.location.href = "/admin/client-side";
      });
   }
 get f() { return this.registerForm.controls; }

@@ -92,7 +92,7 @@ export class UpdateSpecialisteComponent implements OnInit {
       err=> console.log(err)
     )
     $('#exampleModalCenter').on('hidden.bs.modal',  () => {
-      window.location.href = "http://localhost:4200/admin/specialiste-side";
+      window.location.href = "/admin/specialiste-side";
      });
     }
 

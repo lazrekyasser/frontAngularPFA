@@ -66,7 +66,7 @@ export class EditProfileComponent implements OnInit {
         // console.log("hhhhhhh")
         console.log(res.src);
         (document.getElementById('myImage3') as HTMLFormElement).src = res.src;
-        window.location.href = "http://localhost:4200/home";
+        window.location.href = "/home";
       },err=>{console.log(err)}
       );
     
